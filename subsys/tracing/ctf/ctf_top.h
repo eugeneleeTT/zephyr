@@ -106,6 +106,8 @@ typedef enum {
 	CTF_EVENT_THREAD_USER_MODE_ENTER = 0x34,
 	CTF_EVENT_THREAD_WAKEUP = 0x35,
 
+	CTF_EVENT_GPIO_ACTIVE = 0x36,
+	CTF_EVENT_GPIO_INACTIVE = 0x37,
 } ctf_event_t;
 
 typedef struct {
