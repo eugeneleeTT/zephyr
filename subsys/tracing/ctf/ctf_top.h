@@ -391,6 +391,16 @@ static inline void ctf_top_timer_status_sync_exit(uint32_t timer, uint32_t resul
 	CTF_EVENT(CTF_LITERAL(uint8_t, CTF_EVENT_TIMER_STATUS_SYNC_EXIT), timer, result);
 }
 
+static inline void ctf_top_gpio_pin_active(uint32_t port, uint32_t pin)
+{
+	CTF_EVENT(CTF_LITERAL(uint8_t, CTF_EVENT_GPIO_ACTIVE), port, pin);
+}
+
+static inline void ctf_top_gpio_pin_inactive(uint32_t port, uint32_t pin)
+{
+	CTF_EVENT(CTF_LITERAL(uint8_t, CTF_EVENT_GPIO_INACTIVE), port, pin);
+}
+
 /* Network socket */
 typedef struct {
 	char buf[CTF_NET_MAX_STRING_LEN];
