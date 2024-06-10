@@ -95,7 +95,7 @@ void sys_trace_idle(void)
 	sys_trace_idle_user();
 }
 
-void sys_trace_gpio_pin_active(const struct device *port, gpio_pin_t pin) {
+void sys_trace_gpiogit_pin_active(const struct device *port, gpio_pin_t pin) {
 	sys_trace_gpio_pin_active_user(port, pin);
 }
 
